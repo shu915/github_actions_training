@@ -8,6 +8,12 @@ on:
     branches:
       - main
 
+permissions:
+  pull-requests: write
+  contents: read 
+  issues: write
+  statuses: write
+
 jobs:
   danger:
     runs-on: ubuntu-latest
