@@ -8,6 +8,10 @@ on:
     branches:
       - main
 
+permissions:
+  pull-requests: write  # Danger.js がPRにコメントできるように権限を追加
+  contents: read 
+
 jobs:
   danger:
     runs-on: ubuntu-latest
