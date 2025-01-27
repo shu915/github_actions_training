@@ -9,8 +9,8 @@ on:
       - main
 
 permissions:
-  pull-requests: write  # Danger.js がPRにコメントできるように権限を追加
   contents: read 
+  issues: write
 
 jobs:
   danger:
